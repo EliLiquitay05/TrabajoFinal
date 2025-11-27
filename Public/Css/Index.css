@@ -1,0 +1,180 @@
+
+
+/*carrrrrirtooooo*/
+
+
+.iconoCarrito {
+  width: 80px;
+    height: 80px;
+     border-radius: 50%; 
+}
+
+
+.barraColor{
+
+  background-color: rgb(0, 39, 97);
+  position: fixed; /*Posiciona el elemento de forma fija en relación a la ventana del navegador*/
+  top: 0; /*Coloca el elemento pegado al borde superior de la ventana (0 píxeles desde arriba).*/
+ 
+  width: 100%;
+  z-index: 100;
+
+}
+
+.Barra {
+    display: flex;
+    align-items: center; /*esto lo alinea, ni muy arriba ni tan abajo*/
+    background: #06398b;
+    padding: 10px 20px; /*esto es la medida del header*/
+
+
+justify-content: space-between; /* Esto empuja el logo a la izquierda y el carrito a la derecha */
+}
+
+.Menu {
+    margin-left: 950px;   /*  EMPUJA A LA DERECHA */
+
+
+    display: flex;
+    gap: 20px;           /* separa los enlaces, este gap funciona si o si con el display */
+}
+
+.Logo {
+    width: 80px;
+    height: 80px;
+}
+
+a{
+      font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+     text-decoration: none; /* Esta línea elimina el subrayado */
+}
+
+
+
+
+#carouselExample {
+  max-width: 1700px;     /* Cambia el ancho total */
+  margin: 0 auto;       /* Centrado horizontal */
+  border-radius: 12px;  /* Bordes redondeados (opcional) */
+  overflow: hidden;     /* Para que los bordes afecten también la imagen */
+   margin-top: 110px; /*este espacio lo puse para que no choque con el header*/
+}
+
+#carouselExample .carousel-item img {
+  height: 1100px;        /* Cambia la altura del carrusel */
+
+}
+
+
+
+.tituloProductos{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #1a73e8;
+    letter-spacing: 2px;
+}
+
+
+
+/* SECCION DE DONDE PUSE LOS PRODUCTOS NUEVOS */
+.tituloProductos{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700; /*PONE LAS LETRTAS EN NEGRITA*/
+    color: #4a8cff;
+    text-shadow: 0 0 10px rgba(74, 140, 255, 0.5);
+}
+
+/* SUBRAYADO ANIMADO BAJO EL TÍTULO */
+.tituloProductos::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #4a8cff, #8ce8ff);
+    margin: 10px auto 0;
+    animation: barraAnimada 2s infinite alternate ease-in-out;
+}
+
+@keyframes barraAnimada {
+    from { width: 520px; }
+    to { width: 260px; }
+}
+
+
+.galeriaProductos{
+   
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+/* TARJETA DE PRODUCTO */
+.imgPNuevo{
+    width: 490px; /*ESTO ES EL ANCHO*/
+    height: 560px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    /* Sombra y transición */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+
+    cursor: pointer;
+}
+
+
+.imgPNuevo:hover{
+    transform: scale(1.12) rotate(1deg);
+    filter: brightness(1.15);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+
+/* desde aqui iniciamos el estuilo del footer*/
+footer{
+    background: #222; 
+    color: white;
+    padding: 80px 20px;
+    font-family: system-ui
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footerCol{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.copy{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+

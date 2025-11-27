@@ -1,0 +1,230 @@
+
+
+/*carrrrrirtooooo*/
+
+
+.iconoCarrito {
+  width: 80px;
+    height: 80px;
+     border-radius: 50%; 
+}
+
+
+.barraColor{
+
+  background-color: rgb(0, 39, 97);
+  position: fixed; /*Posiciona el elemento de forma fija en relación a la ventana del navegador*/
+  top: 0; /*Coloca el elemento pegado al borde superior de la ventana (0 píxeles desde arriba).*/
+ 
+  width: 100%;
+  z-index: 100;
+
+}
+
+.Barra {
+    display: flex;
+    align-items: center; /*esto lo alinea, ni muy arriba ni tan abajo*/
+    background: #06398b;
+    padding: 10px 20px; /*esto es la medida del header*/
+
+
+justify-content: space-between; /* Esto empuja el logo a la izquierda y el carrito a la derecha */
+}
+
+.Menu {
+    margin-left: 950px;   /*  EMPUJA A LA DERECHA */
+
+
+    display: flex;
+    gap: 20px;           /* separa los enlaces, este gap funciona si o si con el display */
+}
+
+.Logo {
+    width: 80px;
+    height: 80px;
+}
+
+a{
+      font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+     text-decoration: none; /* Esta línea elimina el subrayado */
+}
+
+
+
+
+
+
+
+.Global{
+ display: flex; /*esto permite alinear los elementos*/
+  flex-wrap: wrap; /*esto les dice que si ya no entran se baje a la otra linea*/
+  
+  justify-content: center; /* 💥 Esto centra horizontalmente */
+   margin-top: 120px; /*este lo puse paraa que no choque con el header*/
+}
+
+
+
+.Precio {
+
+
+    color: rgb(11, 23, 82); /*esta regla es para cambiar el color del texto*/
+
+    font-size: 30px; /*modifica el tamaño*/
+
+     font-weight: bold; /* esta en negrita*/
+}
+
+.productoTarjeta {
+  margin-left: 17%;
+    height:230px ; /*Alto*/
+    width: 210px; /*Ancho*/
+}
+.NombreProducto {
+     font-size: 20px; /*modifica el tamaño*/
+      font-weight: bold; /*esta en negrita*/ 
+}
+
+.inputCantidad {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+  
+}
+
+
+
+
+
+/*estilo de las 5 estrellas */
+
+.Estrellas {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: left;
+  }
+
+  .Estrellas input {
+    display: none;
+  }
+
+  .Estrellas label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .Estrellas input:checked ~ label,
+  .Estrellas label:hover,
+  .Estrellas label:hover ~ label {
+    color: gold;
+  }
+
+
+
+  .contenedorProductos{
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+
+  .Tarjeta{
+
+    box-shadow:0 0 9px rgb(29, 67, 219);
+
+    margin: 5%;
+
+    width: 420px;     /* ancho */
+    height: 540px;    /* alto */
+
+     margin: 1cm;
+     
+
+  }
+
+
+
+  .contenidoTarjeta{
+
+
+    margin: 5%;
+
+  }
+
+
+
+
+
+
+/*esto es del boton celeste de compra de cada articulo*/
+.botonCeleste {
+  background-color: #4fc3f7;   /* color celeste */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;         /* esquinas redondeadas */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+
+  /* efecto suave */
+  box-shadow: 0 4px 8px rgba(11, 101, 205, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  margin-right: 15%;
+}
+
+
+.botonCeleste:hover {/* efecto al pasar el mouse */
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 16px rgba(3, 3, 219, 0.3);
+  background-color: #29b6f6;
+}
+
+
+.botonCeleste:active {/* efecto al hacer clic */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+/* desde aqui iniciamos el estuilo del footer*/
+footer{
+    background: #222; 
+    color: white;
+    padding: 80px 20px;
+    font-family: system-ui
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footerCol{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.copy{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+

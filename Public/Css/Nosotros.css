@@ -1,0 +1,136 @@
+
+
+/*carrrrrirtooooo*/
+
+
+.iconoCarrito {
+  width: 80px;
+    height: 80px;
+     border-radius: 50%; 
+}
+
+
+.barraColor{
+
+  background-color: rgb(0, 39, 97);
+  position: fixed; /*Posiciona el elemento de forma fija en relación a la ventana del navegador*/
+  top: 0; /*Coloca el elemento pegado al borde superior de la ventana (0 píxeles desde arriba).*/
+ 
+  width: 100%;
+  z-index: 100;
+
+}
+
+.Barra {
+    display: flex;
+    align-items: center; /*esto lo alinea, ni muy arriba ni tan abajo*/
+    background: #06398b;
+    padding: 10px 20px; /*esto es la medida del header*/
+
+
+justify-content: space-between; /* Esto empuja el logo a la izquierda y el carrito a la derecha */
+}
+
+.Menu {
+    margin-left: 950px;   /*  EMPUJA A LA DERECHA */
+
+
+    display: flex;
+    gap: 20px;           /* separa los enlaces, este gap funciona si o si con el display */
+}
+
+.Logo {
+    width: 80px;
+    height: 80px;
+}
+
+a{
+      font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+     text-decoration: none; /* Esta línea elimina el subrayado */
+}
+
+
+
+
+/* ESTILOS GENERALES */
+body {
+   margin-top: 110px;
+  font-family: 'Georgia', serif;
+  background-color: #ffffff;
+  margin: 0;
+  
+
+}
+
+/* CONTENEDOR DE HISTORIA */
+.seccionHistoria {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(135deg, #e1f7ff, #f9f9f9);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  margin-top: 170px; /* Evita que el contenido quede debajo del header */
+
+  
+}
+
+/* TÍTULO PRINCIPAL */
+.tituloHistoria {
+  font-size: 32px;
+  color: #005fed;
+
+
+}
+
+/* PÁRRAFOS DE HISTORIA */
+.parrafoHistoria {
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+
+
+
+
+
+
+/* desde aqui iniciamos el estuilo del footer*/
+footer{
+    background: #222; 
+    color: white;
+    padding: 80px 20px;
+    font-family: system-ui
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footerCol{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.copy{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
